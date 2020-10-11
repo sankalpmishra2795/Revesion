@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    body{
+      background: #333333;
+    }
+    .box{
+      background: #fff;
+      color: steelblue;
+      font-size: 2rem;
+      height: 200px;
+      width: 200px;
+      top: 0;
+      left: 0;
+      text-align: center;
+      position: relative;
+      animation: animate1 5s forwards ease-in-out;
+    }
+    @keyframes animate1 {
+      25%{
+        background: red;
+        color: white;
+        top: 0;
+        left: 400px;
+        border-radius: 50% 0 0 0;
+        }
+        50%{
+          background: yellow;
+          color: green;
+          top: 400px;
+          left: 400px;
+          border-radius: 50% 50% 0 0;
+        }
+        75%{
+          background: green;
+          color: yellow;
+          top: 400px;
+          left: 0;
+          border-radius: 50% 50% 50% 0;
+        }
+        100%{
+          background: blue;
+          color: chartreuse;
+          top: 0;
+          left: 0;
+          border-radius: 50% 50% 50% 50%;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">sankalp</div>
+</body>
+</html>
