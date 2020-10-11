@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>target</title>
+  <style>
+    /* direct child */
+    div > p {
+      background: #ddd;
+    }
+    /* directly after child */
+    div + p {
+      background: #333;
+      color: #fff;
+    }
+    a[target]{
+      background: #ff0000;
+      color: #fff;
+    }
+    input[type="text"],input[type="email"]{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>item-1</li>
+      <li> <p> item-2 </p></li>
+      <li>item-3</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+  </div>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <a href="#">page-1</a>  <a href="#">page-2</a>  <a href="www.google.com" target="blank">google</a>
+  <br><br><br>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="submit" value="submit">
+
+  </form>
+</body>
+</html>
