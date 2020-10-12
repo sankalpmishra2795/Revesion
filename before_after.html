@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before after</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: #333;
+      color: #fff;
+      margin: 0;
+    }
+    header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+    }
+    header::before{
+      content: '';
+      background: url('https://images.unsplash.com/photo-1568484654831-3d3e87b6efa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+      opacity: .6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    header >h1{
+      font-size: 4rem;
+      margin: 1rem;
+    }
+.is-req::after{
+  content: '*';
+  color:red;
+  padding-left: 2rem
+}
+  </style>
+</head>
+<body>
+  <!-- <label for="name" class="
+  is-req">Name</label>
+  <input type="text">
+  <br><br>
+  <br><br> -->
+  <header>
+    <h1>helo word</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, asperiores!</p>
+  <section>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus hic provident eos nesciunt iusto earum ducimus est minima, consectetur facilis corporis beatae eaque libero facere dolorum accusamus, reprehenderit excepturi?</p>
+  </section>
+</header>
+</body>
+</html>
