@@ -1,19 +1,40 @@
-document.getElementById("button").addEventListener("click", loadData);
+let val;
 
-function loadData() {
-  // creat an XHR object
-  const xhr = new XMLHttpRequest();
+val = document;
+val = document.all;
+val = document.all[2];
+val = document.all.length;
+val = document.head;
+val = document.body;
+val = document.doctype;
+val = document.domain;
+val = document.URL;
+val = document.characterSet;
+val = document.contentType;
 
-  // open
-  xhr.open("GET", "data.txt", true);
+val = document.forms;
+val = document.forms[0];
+val = document.forms[0].id;
+val = document.forms[0].method;
+val = document.forms[0].action;
 
-  xhr.onload = function () {
-    if (this.status === 200) {
-      console.log(this.responseText);
-      document.getElementById(
-        "output"
-      ).innerHTML = `<h1>${this.responseText}</h>`;
-    }
-  };
-  xhr.send();
-}
+val = document.links;
+val = document.links[0];
+val = document.links[0].id;
+val = document.links[0].className;
+val = document.links[0].classList[0];
+
+val = document.images;
+
+val = document.scripts;
+val = document.scripts[2].getAttribute("src");
+
+let scripts = document.scripts;
+
+let scriptsArr = Array.from(scripts);
+
+scriptsArr.forEach(function (script) {
+  console.log(script.getAttribute("src"));
+});
+
+console.log(val);
