@@ -1,78 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <script
-      src="https://kit.fontawesome.com/b96b97e1a6.js"
-      crossorigin="anonymous"
-    ></script>
-  <title>Task List</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/b96b97e1a6.js" crossorigin="anonymous"></script>
+  <title>Knowledge Resume</title>
+
 </head>
-
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div id="main" class="card">
-          <div class="card-content">
-            <span class="card-title">Task List</span>
-            <div class="row">
-              <form id="task-form">
-                <div class="input-field col s12">
-                  <input type="text" name="task" id="task" value="Walk the dog">
-                  <label for="task">New Task</label>
-                </div>
-            </div>
-            <input type="submit" value="Add Task" class="btn">
-            </form>
-          </div>
-          <div class="card-action">
-            <h5 id="task-title">Tasks</h5>
-            <ul class="collection">
-              <li class="collection-item">
-                List Item
-                <a href="#" class="delete-item secondary-content">
-                  <i class="fa fa-remove"></i>
-                </a>
-              </li> 
-              <li class="collection-item">
-                List Item
-                <a href="#" class="delete-item secondary-content">
-                  <i class="fa fa-remove"></i>
-                </a>
-              </li> 
-              <li class="collection-item">
-                List Item
-                <a href="#" class="delete-item secondary-content">
-                  <i class="fa fa-remove"></i>
-                </a>
-              </li>
-              <li class="collection-item">
-                List Item
-                <a href="#" class="delete-item secondary-content">
-                  <i class="fa fa-remove"></i>
-                </a>
-              </li>
-              <li class="collection-item">
-                List Item
-                <a href="#" class="delete-item secondary-content">
-                  <i class="fa fa-remove"></i>
-                </a>
-              </li>
-            </ul>
-            <a class="clear-tasks btn black" href="">Clear Tasks</a>
-          </div>
-        </div>
-      </div>
+  <header id="main-header">
+    <div class="contanier">
+      <h1><i class="fas fa-brain"></i>Knowledge Resume</h1>
+      <h3><i class="fas fa-user"></i>Sankalp Mishra</h3>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="app.js"></script>
-</body>
+  </header>
+  <section id="timeline">
+    <ul>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i>2007 Html & Css</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed corrupti cumque, rerum repudiandae consequuntur quidem ab quo error possimus?</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>
+            <i class="fas fa-chevron-right"></i> 2008: JavaScript & JQuery
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2009: PHP & Wordpress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2011: Ruby on Rails</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2012: Python</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2013: Node.js & React</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>
+            <i class="fas fa-chevron-right"></i> 2015: Angular & React Native
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2016: Vue.js</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2017: GraphQl & Apollo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3><i class="fas fa-chevron-right"></i> 2018: Machine Learning</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+            eum assumenda architecto, perspiciatis itaque maiores ex rerum
+            libero provident!
+          </p>
+        </div>
+      </li>
+    </ul>
 
+  </section>
+  <script src="./main.js"></script>
+</body>
 </html>
