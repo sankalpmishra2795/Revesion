@@ -1,125 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://kit.fontawesome.com/b96b97e1a6.js" crossorigin="anonymous"></script>
-  <title>Knowledge Resume</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-  <header id="main-header">
-    <div class="contanier">
-      <h1><i class="fas fa-brain"></i>Knowledge Resume</h1>
-      <h3><i class="fas fa-user"></i>Sankalp Mishra</h3>
-    </div>
-  </header>
-  <section id="timeline">
-    <ul>
-      <li>
-        <div>
-          <h3><i class="fas fa-chevron-right"></i>2007 Html & Css</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed corrupti cumque, rerum repudiandae consequuntur quidem ab quo error possimus?</p>
+    <script
+      src="https://kit.fontawesome.com/b96b97e1a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:786px)"
+      href="mobile.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favcion.ico" />
+    <title>Grid News</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="contanier">
+        <img src="./logo.png" alt="news grid" class="logo" />
+        <div class="social">
+          <a href="htpp://.facebook.com"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="htpp://.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="htpp://.instagram.com"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="htpp://.youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
         </div>
-      </li>
-      <li>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- showcase -->
+    <header id="showcase">
+      <div class="contanier">
+        <div class="showcase-contanier">
+          <div class="contant">
+            <h3 class="category category-sport">Sport</h3>
+            <h3>Some sports articale</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium aperiam, quaerat labore aspernatur accusantium nobis
+              nemo porro optio ipsa corrupti!
+            </p>
+            <a href="artical.html" class="btn btn-pry">Read More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- home artical -->
+    <section id="home-art" class="py-2">
+      <div class="contanier">
+        <h2>Editor Picks</h2>
+        <div class="art-contanier">
+          <article class="card">
+            <img src="./articles/ent1.jpg" alt="" />
+            <div>
+              <div class="category category-ent">Entertenment</div>
+              <h3><a href="artical.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat dolores qui doloribus, tempore animi dignissimos
+                repudiandae culpa enim unde aliquam.
+              </p>
+            </div>
+          </article>
+          <article class="card bg-dark">
+            <div class="category category-sport">
+              Sport
+            </div>
+            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
+              enim unde aliquam.
+            </p>
+          </article>
+          <article class="card">
+            <img src="./articles/tech1.jpg" alt="" />
+            <div class="category category-tech">
+              Technology
+            </div>
+            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
+              enim unde aliquam.
+            </p>
+          </article>
+          <article class="card">
+            <div class="category category-sport">
+              Sport
+            </div>
+            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
+              enim unde aliquam.
+            </p>
+            <img src="./articles/sports1.jpg" alt="" />
+          </article>
+          <article class="card">
+            <img src="./articles/tech2.jpg" alt="" />
+            <div class="category category-tech">
+              Technology
+            </div>
+            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
+              enim unde aliquam.
+            </p>
+          </article>
+          <article class="card bg-pry">
+            <div class="category category-sport">
+              Sport
+            </div>
+            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              itaque sit adipisci, repellendus eligendi est vel velit harum
+              reiciendis quidem?
+            </p>
+          </article>
+          <article class="card">
+            <div class="category category-ent">Entertenment</div>
+            <h3><a href="artical.html">Lorem ipsum dolor sit amet.</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
+              enim unde aliquam.
+            </p>
+            <img src="./articles/ent2.jpg" alt="" />
+            <div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section id="main-footer" class="py-2">
+      <div class="contanier footer-contanier">
         <div>
-          <h3>
-            <i class="fas fa-chevron-right"></i> 2008: JavaScript & JQuery
-          </h3>
+          <img src="./logo_light.png" alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis nulla mollitia nostrum architecto tempore error dolorem
+            obcaecati cum qui soluta.
           </p>
         </div>
-      </li>
-      <li>
         <div>
-          <h3><i class="fas fa-chevron-right"></i> 2009: PHP & Wordpress</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <form>
+            <input type="email" placeholder="Enter Email.." />
+            <input type="button" value="submit" class="btn btn-pry" />
+          </form>
         </div>
-      </li>
-      <li>
         <div>
-          <h3><i class="fas fa-chevron-right"></i> 2011: Ruby on Rails</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
+          <h3>Site link</h3>
+          <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-      </li>
-      <li>
         <div>
-          <h3><i class="fas fa-chevron-right"></i> 2012: Python</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            quibusdam?
+          </h2>
+          <a href="#" class="btn btn-sec">Join Now</a>
         </div>
-      </li>
-      <li>
         <div>
-          <h3><i class="fas fa-chevron-right"></i> 2013: Node.js & React</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
+          <p>Copyright &copy; 2020 All Right Reserved</p>
         </div>
-      </li>
-      <li>
-        <div>
-          <h3>
-            <i class="fas fa-chevron-right"></i> 2015: Angular & React Native
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3><i class="fas fa-chevron-right"></i> 2016: Vue.js</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3><i class="fas fa-chevron-right"></i> 2017: GraphQl & Apollo</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3><i class="fas fa-chevron-right"></i> 2018: Machine Learning</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-            libero provident!
-          </p>
-        </div>
-      </li>
-    </ul>
-
-  </section>
-  <script src="./main.js"></script>
-</body>
+      </div>
+    </section>
+  </body>
 </html>
