@@ -4,187 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
       rel="stylesheet"
-    />
-
-    <script
-      src="https://kit.fontawesome.com/b96b97e1a6.js"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:786px)"
-      href="mobile.css"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="favcion.ico" />
-    <title>Grid News</title>
+    <link rel="stylesheet" href="movie.css" />
+    <title>Movie Finder</title>
   </head>
   <body>
-    <nav id="main-nav">
-      <div class="contanier">
-        <img src="./logo.png" alt="news grid" class="logo" />
-        <div class="social">
-          <a href="htpp://.facebook.com"
-            ><i class="fab fa-facebook fa-2x"></i
-          ></a>
-          <a href="htpp://.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="htpp://.instagram.com"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-          <a href="htpp://.youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
-        </div>
-        <ul>
-          <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="about.html">about</a></li>
-        </ul>
-      </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-light color1">
+      <a class="navbar-brand">Movie&capbrcup; Finder</a>
+      <button class="btn btn-outline-success my-2 my-sm-0 color2">Login</button>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Enter movie name here"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success my-2 my-sm-0 color2"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
     </nav>
-    <!-- showcase -->
-    <header id="showcase">
-      <div class="contanier">
-        <div class="showcase-contanier">
-          <div class="contant">
-            <h3 class="category category-sport">Sport</h3>
-            <h3>Some sports articale</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium aperiam, quaerat labore aspernatur accusantium nobis
-              nemo porro optio ipsa corrupti!
-            </p>
-            <a href="artical.html" class="btn btn-pry">Read More</a>
+    <!-- Carousel -->
+    <div class="container-flud">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade imghight"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner imghight">
+          <div class="carousel-item active imghight">
+            <img
+              src="./img/denise-jans-Lq6rcifGjOU-unsplash.jpg"
+              class="d-block w-100 h-75"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item imghight">
+            <img
+              src="./img/jeremy-yap-J39X2xX_8CQ-unsplash.jpg"
+              class="d-block w-100 h-75"
+              alt="Search Your Wish"
+            />
+          </div>
+          <div class="carousel-item imghight">
+            <img
+              src="./img/myke-simon-atsUqIm3wxo-unsplash.jpg"
+              class="d-block w-100 h-75"
+              alt=" & Enjoy !"
+            />
           </div>
         </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </header>
-    <!-- home artical -->
-    <section id="home-art" class="py-2">
-      <div class="contanier">
-        <h2>Editor Picks</h2>
-        <div class="art-contanier">
-          <article class="card">
-            <img src="./articles/ent1.jpg" alt="" />
-            <div>
-              <div class="category category-ent">Entertenment</div>
-              <h3><a href="artical.html">Lorem ipsum dolor sit amet.</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat dolores qui doloribus, tempore animi dignissimos
-                repudiandae culpa enim unde aliquam.
-              </p>
-            </div>
-          </article>
-          <article class="card bg-dark">
-            <div class="category category-sport">
-              Sport
-            </div>
-            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
-              enim unde aliquam.
-            </p>
-          </article>
-          <article class="card">
-            <img src="./articles/tech1.jpg" alt="" />
-            <div class="category category-tech">
-              Technology
-            </div>
-            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
-              enim unde aliquam.
-            </p>
-          </article>
-          <article class="card">
-            <div class="category category-sport">
-              Sport
-            </div>
-            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
-              enim unde aliquam.
-            </p>
-            <img src="./articles/sports1.jpg" alt="" />
-          </article>
-          <article class="card">
-            <img src="./articles/tech2.jpg" alt="" />
-            <div class="category category-tech">
-              Technology
-            </div>
-            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
-              enim unde aliquam.
-            </p>
-          </article>
-          <article class="card bg-pry">
-            <div class="category category-sport">
-              Sport
-            </div>
-            <h3><a href="articles.html">Lorem ipsum dolor sit amet.</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              itaque sit adipisci, repellendus eligendi est vel velit harum
-              reiciendis quidem?
-            </p>
-          </article>
-          <article class="card">
-            <div class="category category-ent">Entertenment</div>
-            <h3><a href="artical.html">Lorem ipsum dolor sit amet.</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              dolores qui doloribus, tempore animi dignissimos repudiandae culpa
-              enim unde aliquam.
-            </p>
-            <img src="./articles/ent2.jpg" alt="" />
-            <div></div>
-          </article>
+    </div>
+    <!-- input box -->
+    <div class="container">
+      <h1 class="heading text-center">Search Your Wish</h1>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button type="button" class="btn btn-success searchinput">
+            Search
+          </button>
         </div>
+        <input
+          type="text"
+          class="form-control userinput"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+        />
       </div>
-    </section>
-    <!-- footer -->
-    <section id="main-footer" class="py-2">
-      <div class="contanier footer-contanier">
-        <div>
-          <img src="./logo_light.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis nulla mollitia nostrum architecto tempore error dolorem
-            obcaecati cum qui soluta.
-          </p>
-        </div>
-        <div>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <form>
-            <input type="email" placeholder="Enter Email.." />
-            <input type="button" value="submit" class="btn btn-pry" />
-          </form>
-        </div>
-        <div>
-          <h3>Site link</h3>
-          <ul class="list">
-            <li><a href="#">Help & Support</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-            quibusdam?
-          </h2>
-          <a href="#" class="btn btn-sec">Join Now</a>
-        </div>
-        <div>
-          <p>Copyright &copy; 2020 All Right Reserved</p>
-        </div>
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-around" id="output"></div>
+    </div>
+    <!-- Footer -->
+    <div class="card">
+      <div class="card-body text-center bg-dark">
+        <h4 class="text-white">All Things Are Reserved &copf;2020.</h4>
       </div>
-    </section>
+    </div>
+
+    <!-- jquery script -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="ui.js"></script>
+    <script src="movie.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
