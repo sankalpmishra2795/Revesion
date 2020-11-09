@@ -5,128 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
     />
-    <link rel="stylesheet" href="movie.css" />
-    <title>Movie Finder</title>
+    <title>Guess Number</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-light color1">
-      <a class="navbar-brand">Movie&capbrcup; Finder</a>
-      <button class="btn btn-outline-success my-2 my-sm-0 color2">Login</button>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Enter movie name here"
-          aria-label="Search"
-        />
-        <button
-          class="btn btn-outline-success my-2 my-sm-0 color2"
-          type="submit"
-        >
-          Search
-        </button>
-      </form>
-    </nav>
-    <!-- Carousel -->
-    <div class="container-flud">
-      <div
-        id="carouselExampleFade"
-        class="carousel slide carousel-fade imghight"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner imghight">
-          <div class="carousel-item active imghight">
-            <img
-              src="./img/denise-jans-Lq6rcifGjOU-unsplash.jpg"
-              class="d-block w-100 h-75"
-              alt=""
-            />
-          </div>
-          <div class="carousel-item imghight">
-            <img
-              src="./img/jeremy-yap-J39X2xX_8CQ-unsplash.jpg"
-              class="d-block w-100 h-75"
-              alt="Search Your Wish"
-            />
-          </div>
-          <div class="carousel-item imghight">
-            <img
-              src="./img/myke-simon-atsUqIm3wxo-unsplash.jpg"
-              class="d-block w-100 h-75"
-              alt=" & Enjoy !"
-            />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleFade"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleFade"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <!-- input box -->
     <div class="container">
-      <h1 class="heading text-center">Search Your Wish</h1>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <button type="button" class="btn btn-success searchinput">
-            Search
-          </button>
-        </div>
-        <input
-          type="text"
-          class="form-control userinput"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default"
-        />
+      <h1 class="heading">Number Gusser</h1>
+      <div id="game">
+        <p>
+          Guess a number between <span class="min-num"></span> and
+          <span class="max-num"></span>
+        </p>
+        <input type="number" id="guess-input" placeholder="Enter your guess" />
+        <input type="button" value="submit" id="guess-btn" />
+        <p class="message"></p>
       </div>
     </div>
-    <div class="container">
-      <div class="row d-flex justify-content-around" id="output"></div>
-    </div>
-    <!-- Footer -->
-    <div class="card">
-      <div class="card-body text-center bg-dark">
-        <h4 class="text-white">All Things Are Reserved &copf;2020.</h4>
-      </div>
-    </div>
-
-    <!-- jquery script -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script src="ui.js"></script>
-    <script src="movie.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
